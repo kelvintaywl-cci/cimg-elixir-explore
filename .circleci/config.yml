@@ -9,4 +9,5 @@ jobs:
     steps:
       - checkout:
           path: ~/project
+      - run: mix do local.hex --force, local.rebar --force
       - run: mix deps.get
