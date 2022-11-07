@@ -1,0 +1,10 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: cimg/elixir:1.13.3-node
+    resource_class: medium
+    steps:
+      - run: |
+          mix hex.info spandex
