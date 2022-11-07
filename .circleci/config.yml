@@ -6,5 +6,4 @@ jobs:
       - image: cimg/elixir:1.13.3-node
     resource_class: medium
     steps:
-      - run: |
-          mix hex.info spandex
+      - checkout
